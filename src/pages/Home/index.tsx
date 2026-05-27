@@ -1,13 +1,13 @@
 import { Hero } from '../../components/Hero'
+import { LatestEvent } from '../../components/LatestEvent'
 import { Latest } from '../../components/Latest'
-import { Event } from '../../components/Event'
 
 export function Home() {
   return (
     <>
       <main>
         <Hero />
-        <Event />
+        <LatestEvent />
         <Latest />
       </main>
     </>

@@ -5,6 +5,7 @@ import { stripBasePath, withBasePath } from '../lib/basePath'
 
 const navItems = [
   { label: 'バックナンバー', href: '/backnumber' },
+  { label: 'イベント', href: '/event' },
   { label: '書籍', href: '/books' },
   { label: '会社案内', href: '/company' },
   { label: '映像', href: '/videos' },

@@ -7,4 +7,4 @@ services:
     volumes:
       - .:/application
     ports:
-      - 3000:3000 # frontend
+      - 3001:3000 # frontend

@@ -19,6 +19,7 @@ export default defineConfig({
 					'/backnumber/2',
 					'/backnumber/1',
 					'/books',
+					'/event',
 					'/company',
 					'/videos',
 					'/contact',

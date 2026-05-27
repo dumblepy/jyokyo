@@ -6,6 +6,7 @@ import { Backnumber } from './pages/Backnumber'
 import { Books } from './pages/Books'
 import { Company } from './pages/Company'
 import { Videos } from './pages/Videos'
+import { Event } from './pages/Event'
 import { NotFound } from './pages/_404'
 import { getBasePathPrefix } from './lib/basePath'
 import './style.css'
@@ -40,6 +41,8 @@ export function App() {
         ) : null}
         <Route path="/videos" component={Videos} />
         {hasBasePathPrefix ? <Route path={getPrefixedRoute(basePathPrefix, '/videos')} component={Videos} /> : null}
+        <Route path="/event" component={Event} />
+        {hasBasePathPrefix ? <Route path={getPrefixedRoute(basePathPrefix, '/event')} component={Event} /> : null}
         <Route default component={NotFound} />
       </Router>
       <Footer />
