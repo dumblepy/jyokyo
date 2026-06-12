@@ -64,6 +64,15 @@ export function EventItem({ event }: EventItemProps) {
               </dt>
               <dd className="mt-1 text-sm font-light text-foreground">{event.ticketPrice}</dd>
             </div>
+            {event.memo && (
+              <div>
+                {event.memo.map((memo, index) => (
+                  <dd key={index} className="mt-1 text-sm font-light text-foreground">
+                    {memo}
+                  </dd>
+                ))}
+              </div>
+            )}
           </dl>
         </div>
       </div>
